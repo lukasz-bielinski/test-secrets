@@ -18,7 +18,7 @@ else
       echo ""
     	echo "Es status at $(date) is $esStatus"
       echo ""
-      sleep 3
+      sleep 10
       esStatus=$(curl $ELASTICSEARCH_HOST:9200/_cat/health --connect-timeout 1 -m 2 | awk '{print $4}')
       echo "try to reallocate UNASSIGNED shards, because $esStatus status"
           ##rerouting UNASSIGNED shards
