@@ -12,7 +12,7 @@ echo "Starting poststart hook"
   }' "http://$ELASTICSEARCH_HOST:9200/_cluster/settings" --connect-timeout 1 -m 2
 
 
-bash /hooks/reallocate.sh &
+# bash /hooks/reallocate.sh &
 
 exit 0
 #
