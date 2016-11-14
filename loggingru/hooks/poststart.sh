@@ -14,4 +14,3 @@ echo "Starting poststart hook"
 
 /bin/bash /hooks/reallocate.sh
 exit 0
-#
